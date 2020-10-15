@@ -32,8 +32,8 @@ let Calculator = {
 function actionApplyer(integer, fnArray){
     let a = integer
 
-    for (let i = 0; i < fnArray.length; i++ ){
-      a = fnArray[i](a)
+    for (const fn of fnArray){
+      a = fn(a)
     }
   
     return a
